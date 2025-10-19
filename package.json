@@ -3,6 +3,12 @@
   "version": "0.0.1",
   "description": "an ESLint plugin that transforms barrel imports into default imports and enforces import sorting.",
   "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "require": "./lib/index.js",
+      "import": "./lib/index.mjs"
+    }
+  },
   "files": [
     "lib"
   ],
