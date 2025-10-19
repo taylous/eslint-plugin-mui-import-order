@@ -13,7 +13,7 @@
     "lib"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node tests/no-barrel-import.test.js"
   },
   "repository": {
     "type": "git",
@@ -29,5 +29,11 @@
   "bugs": {
     "url": "https://github.com/taylous/eslint-plugin-mui-import-order/issues"
   },
-  "homepage": "https://github.com/taylous/eslint-plugin-mui-import-order#readme"
+  "homepage": "https://github.com/taylous/eslint-plugin-mui-import-order#readme",
+  "peerDependencies": {
+    "eslint": ">=9.0.0 <10.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^9.37.0"
+  }
 }
