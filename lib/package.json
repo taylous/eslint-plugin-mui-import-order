@@ -1,0 +1,11 @@
+{
+  "name": "eslint-plugin-mui-import-order",
+  "main": "./index.js",
+  "type": "commonjs",
+  "exports": {
+    ".": {
+      "require": "./index.js",
+      "import": "./index.mjs"
+    }
+  }
+}
