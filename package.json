@@ -3,14 +3,19 @@
   "version": "0.0.1",
   "description": "an ESLint plugin that transforms barrel imports into default imports and enforces import sorting.",
   "main": "lib/index.js",
+  "module": "lib/index.mjs",
+  "types": "lib/index.d.ts",
   "exports": {
     ".": {
+      "types": "./lib/index.d.ts",
       "require": "./lib/index.js",
       "import": "./lib/index.mjs"
-    }
+    },
+    "./package.json": "./package.json"
   },
   "files": [
-    "lib"
+    "lib",
+    "README.md"
   ],
   "scripts": {
     "test": "node tests/no-barrel-import.test.js"
@@ -26,6 +31,13 @@
   ],
   "author": "taylous",
   "license": "MIT",
+  "engines": {
+    "node": "^18.18.0 || >=20.0.0"
+  },
+  "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "bugs": {
     "url": "https://github.com/taylous/eslint-plugin-mui-import-order/issues"
   },
